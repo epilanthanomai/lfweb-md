@@ -1,0 +1,224 @@
+@import 'site-defs';
+
+$width-body: 1024px;
+$width-margin-body-mobile: 10px;
+$width-margin-left-skills: 2rem;
+$width-margin-left-skills-narrow: 1.8rem;
+$width-left: 4rem;
+$size-arrow-inline: 0.8em;
+
+/* structural elements */
+
+html {
+  position: relative;
+  max-width: $width-body;
+  background-color: $color-site-primary;
+  font-family: sans-serif;
+
+  @media (width >= $width-extra-wide) {
+    margin: auto;
+  }
+}
+
+body {
+  line-height: 1.2;
+  padding: 2em $width-margin-body-mobile 2em #{$width-left + 0.8rem};
+  background-color: white;
+  color: $color-almost-black;
+
+  @media (width >= $width-extra-wide) {
+    padding: 3em;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 4rem solid green;
+
+    @media (width >= $width-extra-wide) {
+      border: 0;
+    }
+  }
+
+}
+
+.level2 {
+  margin: 3em 0;
+  @media (width < $width-narrow) {
+    margin: 2em 0;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $color-site-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -3rem;
+    top: 0.2em;
+    border: #{$size-arrow-inline / 2} solid transparent;
+    border-left-color: $color-site-secondary;
+
+    @media (width >= $width-extra-wide) {
+      left: -6rem;
+    }
+  }
+}
+
+a, a:visited {
+  color: $color-site-primary;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active, a:hover, a:focus {
+  color: $color-site-secondary;
+  text-decoration: underline;
+}
+
+/* awkwardly shared properties. TODO refactor to shareable bits? */
+
+.tagline, .note {
+  font-size: 0.9rem;
+  color: $color-gray-medium;
+}
+
+.tagline {
+  margin: 0.2rem 4rem 2em;
+  @media (width < $width-narrow) {
+    margin: 0.2rem 2rem 1.5rem;
+  }
+}
+
+.note-flow {
+  margin: 3em 4rem;
+  text-align: center;
+  @media (width < $width-narrow) {
+    margin: 3em 1rem;
+  }
+}
+
+.note-critical {
+  color: $color-site-secondary;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.skills, .experience--skills {
+  li {
+    display: inline;
+    margin: 0 0.2em;
+    white-space: nowrap;
+  }
+  ul {
+    font-size: 0.9rem;
+  }
+}
+
+.experience--description,
+.humanity {
+  ul {
+    margin: 1em;
+  }
+
+  li {
+    margin: 0.5em 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1em;
+      top: #{(1em - $size-arrow-inline) / 2};
+      border: #{$size-arrow-inline / 2} solid transparent;
+      border-left-color: $color-site-secondary;
+    }
+  }
+}
+
+/* sections */
+
+.contact {
+  position: relative;
+  margin: 2.5em 0 4em;
+
+  @media (width < $width-narrow) {
+    margin: 1em 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:active, &:hover, &:focus {
+      color: $color-site-secondary;
+    }
+  }
+
+  dt {
+    position: absolute;
+    left: -5em;
+    display: inline-block;
+    width: #{$width-left - 0.8rem};
+    text-align: right;
+    font-weight: lighter;
+    color: $color-gray-light;
+    @media (width >= $width-extra-wide) {
+      left: -8em;
+    }
+  }
+
+  dd {
+    font-weight: bold;
+  }
+}
+
+.skills {
+  h3 {
+    color: $color-gray-medium;
+  }
+}
+
+.skills--category {
+  margin: 0.4em 0;
+  ul {
+    margin: 0 0 0 $width-margin-left-skills;
+    @media (width < $width-narrow) {
+      margin-left: $width-margin-left-skills-narrow;
+    }
+  }
+}
+
+.experience {
+  h3 {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $color-site-primary;
+    margin: 1.5rem 0 0.3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.8rem;
+      border: 0.4em solid transparent;
+      border-left-color: $color-almost-black;
+      top: 0.2em;
+      @media (width >= $width-extra-wide) {
+        left: -4.8rem;
+      }
+    }
+  }
+}
+
+/* FIXME &--title and &--tenure etc broken on live */

@@ -13,7 +13,9 @@ GEN_ALL+=$$(GEN_$(2)_$(1))
 endef
 
 $(eval $(call transform,md,html))
-PANDOC_OPTS=--metadata-file=common-metadata.yaml
+PANDOC_OPTS=\
+	--metadata-file=common-metadata.yaml \
+	--section-divs
 %.html: %.md common-metadata.yaml
 	pandoc $(PANDOC_OPTS) -t html5 -s -o $@ $<
 
