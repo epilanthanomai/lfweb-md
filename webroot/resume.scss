@@ -95,9 +95,9 @@ a:active, a:hover, a:focus {
 }
 
 .tagline {
-  margin: 0.2rem 4rem 2em;
+  margin: 0.2rem 1.8rem 2em;
   @media (width < $width-narrow) {
-    margin: 0.2rem 2rem 1.5rem;
+    margin: 0.2rem 1.1rem 1.5rem;
   }
 }
 
@@ -116,15 +116,23 @@ a:active, a:hover, a:focus {
 }
 
 .skills, .experience--skills {
-  li {
-    display: inline;
-    margin: 0 0.2em;
-    white-space: nowrap;
-  }
   ul {
     font-size: 0.9rem;
+    margin: 0 1.8em;
+    @media (width < $width-narrow) {
+      margin: 0 0.8em;
+    }
+  }
+  li {
+    display: inline;
+    white-space: nowrap;
+    margin: 0 0.35em;
+    @media (width < $width-narrow) {
+      margin: 0 0.4em;
+    }
   }
 }
+
 
 .experience--description,
 .humanity {
@@ -185,6 +193,7 @@ a:active, a:hover, a:focus {
 
 .skills {
   h3 {
+    margin: 0.5em 0 0.1em;
     color: $color-gray-medium;
   }
 }
@@ -205,8 +214,6 @@ a:active, a:hover, a:focus {
     font-size: 1.2rem;
     font-weight: bold;
     color: $color-site-primary;
-    margin: 1.5rem 0 0.3rem;
-
     &::before {
       content: "";
       position: absolute;
@@ -219,6 +226,36 @@ a:active, a:hover, a:focus {
       }
     }
   }
+  &--company {
+    position: relative;
+    margin: 2em 0;
+    @media (width < $width-narrow) {
+      margin: 1em 0;
+    }
+  }
+  &--prolog {
+    @media (width >= $width-narrow) {
+      position: absolute;
+      text-align: right;
+      top: 0;
+      right: 0;
+    }
+    @media (width < $width-narrow) {
+      margin: 0.3em 0;
+    }
+  }
+  &--title {
+    font-weight: bold;
+  }
+  &--skills {
+    // NOTE: .skills ul, .experience--skills ul already has a left/right
+    // margin
+    margin: 1.2em 0;
+    @media (width < $width-narrow) {
+      margin: 0.8em 0;
+    }
+  }
+  &--tenure {
+    color: $color-gray-medium;
+  }
 }
-
-/* FIXME &--title and &--tenure etc broken on live */
