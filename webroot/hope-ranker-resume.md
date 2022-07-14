@@ -101,8 +101,8 @@ stuff I've done for money
 
 ### [Pandora](https://www.pandora.com/) {.experience--company}
 ::: {.experience--prolog}
-* [staff engineer]{.experience--title}
-* [July 2018-present]{.experience--tenure}
+[staff engineer]{.experience--title}
+[July 2018-present]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -136,8 +136,8 @@ stuff I've done for money
 
 ### [CareerBuilder](https://www.careerbuilder.com/) {.experience--company}
 ::: {.experience--prolog}
-* [engineering lead]{.experience--title}
-* [August 2016-July 2018]{.experience--tenure}
+[engineering lead]{.experience--title}
+[August 2016-July 2018]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -170,8 +170,8 @@ stuff I've done for money
 
 ### [If/Then](https://www.ifthen.com/) {.experience--company}
 ::: {.experience--prolog}
-* [senior engineer]{.experience--title}
-* [March 2014-August 2016]{.experience--tenure}
+[senior engineer]{.experience--title}
+[March 2014-August 2016]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -207,8 +207,8 @@ earlier references.
 
 ### [IBM Security (NIPS)](https://www.ibm.com/) {.experience--company}
 ::: {.experience--prolog}
-* [advisory software engineer]{.experience--title}
-* [November 2012-March 2014]{.experience--tenure}
+[advisory software engineer]{.experience--title}
+[November 2012-March 2014]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -237,8 +237,8 @@ earlier references.
 
 ### [Emory University Libraries](https://libraries.emory.edu/) {.experience--company}
 ::: {.experience--prolog}
-* [senior software engineer]{.experience--title}
-* [May 2009-November 2012]{.experience--tenure}
+[senior software engineer]{.experience--title}
+[May 2009-November 2012]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -265,8 +265,8 @@ earlier references.
 
 ### [IBM Security (X-Force)](https://www.ibm.com) {.experience--company}
 ::: {.experience--prolog}
-* [software engineer]{.experience--title}
-* [2006-May 2009]{.experience--tenure}
+[software engineer]{.experience--title}
+[2006-May 2009]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -293,8 +293,8 @@ earlier references.
 
 ### Reflex Security {.experience--company}
 ::: {.experience--prolog}
-* [software engineer]{.experience--title}
-* [2005-2006]{.experience--tenure}
+[software engineer]{.experience--title}
+[2005-2006]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -316,8 +316,8 @@ earlier references.
 
 ### [SecureWorks](https://www.secureworks.com) {.experience--company}
 ::: {.experience--prolog}
-* [software engineer]{.experience--title}
-* [2001-2005]{.experience--tenure}
+[software engineer]{.experience--title}
+[2001-2005]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -347,8 +347,8 @@ acquired by [NCR](https://www.ncr.com/)
 :::
 
 ::: {.experience--prolog}
-* [senior support engineer]{.experience--title}
-* [1999-2001]{.experience--tenure}
+[senior support engineer]{.experience--title}
+[1999-2001]{.experience--tenure}
 :::
 
 ::: {.experience--skills}
@@ -370,8 +370,8 @@ acquired by [NCR](https://www.ncr.com/)
 
 ### [Sykes Enterprises, inc](https://www.sykes.com) {.experience--company}
 ::: {.experience--prolog}
-* [tech support lead]{.experience--title}
-* [1996-1999]{.experience--tenure}
+[tech support lead]{.experience--title}
+[1996-1999]{.experience--tenure}
 :::
 
 ::: {.experience--skills}

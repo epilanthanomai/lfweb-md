@@ -22,7 +22,7 @@ PANDOC_OPTS=\
 BUILD_SCSS_ALL:=$(filter %.scss,$(BUILD_FILES))
 BUILD_SCSS_CONVERT:=$(foreach f,$(BUILD_SCSS_ALL),$(if $(findstring /_,$f),,$f))
 $(eval $(call transform,scss,css,$(BUILD_SCSS_CONVERT)))
-%.css: %.scss
+%.css: %.scss webroot/_site-defs.scss
 	sass $< $@
 
 .PHONY: all

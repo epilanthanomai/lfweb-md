@@ -67,7 +67,7 @@ h2 {
     content: "";
     position: absolute;
     left: -3rem;
-    top: 0.2em;
+    top: #{(1.3em - $size-arrow-inline) / 2};
     border: #{$size-arrow-inline / 2} solid transparent;
     border-left-color: $color-site-secondary;
 
@@ -126,10 +126,8 @@ a:active, a:hover, a:focus {
   li {
     display: inline;
     white-space: nowrap;
-    margin: 0 0.35em;
-    @media (width < $width-narrow) {
-      margin: 0 0.4em;
-    }
+    margin: 0 0.4em;
+    line-height: 1.6;
   }
 }
 
@@ -137,18 +135,18 @@ a:active, a:hover, a:focus {
 .experience--description,
 .humanity {
   ul {
-    margin: 1em;
+    margin: 0.8em 1em;
   }
 
   li {
-    margin: 0.5em 0;
+    margin: 0.6em 0;
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
       left: -1em;
-      top: #{(1em - $size-arrow-inline) / 2};
+      top: #{(1.3em - $size-arrow-inline) / 2};
       border: #{$size-arrow-inline / 2} solid transparent;
       border-left-color: $color-site-secondary;
     }
@@ -218,9 +216,9 @@ a:active, a:hover, a:focus {
       content: "";
       position: absolute;
       left: -1.8rem;
-      border: 0.4em solid transparent;
+      border: #{$size-arrow-inline / 2} solid transparent;
       border-left-color: $color-almost-black;
-      top: 0.2em;
+      top: #{(1.3em - $size-arrow-inline) / 2};
       @media (width >= $width-extra-wide) {
         left: -4.8rem;
       }
@@ -234,28 +232,39 @@ a:active, a:hover, a:focus {
     }
   }
   &--prolog {
-    @media (width >= $width-narrow) {
+    @media (width >= $width-experience-prolog) {
       position: absolute;
       text-align: right;
       top: 0;
       right: 0;
     }
-    @media (width < $width-narrow) {
+    @media (width < $width-experience-prolog) {
       margin: 0.3em 0;
     }
   }
   &--title {
+    @media (width < $width-experience-prolog) {
+      display: block;
+    }
+    margin-right: 1.2em;
     font-weight: bold;
   }
   &--skills {
     // NOTE: .skills ul, .experience--skills ul already has a left/right
     // margin
-    margin: 1.2em 0;
+    margin: 0.4em 0;
     @media (width < $width-narrow) {
       margin: 0.8em 0;
     }
   }
   &--tenure {
+    @media (width < $width-experience-prolog) {
+      display: block;
+    }
+    @media (width >= $width-experience-prolog) {
+      float: left;
+    }
+    margin-right: 1.2em;
     color: $color-gray-medium;
   }
 }
