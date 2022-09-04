@@ -1,6 +1,8 @@
 .PHONY: default
 default: all
 
+SASS=$(shell which sass || which sassc)
+
 SRC_DIRS:=$(shell find webroot -type d)
 SRC_FILES:=$(shell find webroot -type f)
 
@@ -23,7 +25,7 @@ BUILD_SCSS_ALL:=$(filter %.scss,$(BUILD_FILES))
 BUILD_SCSS_CONVERT:=$(foreach f,$(BUILD_SCSS_ALL),$(if $(findstring /_,$f),,$f))
 $(eval $(call transform,scss,css,$(BUILD_SCSS_CONVERT)))
 %.css: %.scss webroot/_site-defs.scss
-	sass $< $@
+	$(SASS) $< $@
 
 .PHONY: all
 all: $(BUILD_DIRS) $(BUILD_FILES) $(GEN_ALL)
